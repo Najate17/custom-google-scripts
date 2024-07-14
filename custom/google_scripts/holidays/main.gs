@@ -11,10 +11,12 @@ function onEdit(e) {
   const range = e.range;
   var editedValue = range.getValue();
   if (editedValue > 0) {
-    range.setBackground("#8D021F")
+    range.setBackground("#e06666")
+    range.setFontWeight("bold");
   }
   else {
     range.setBackground("#cfe2f3")
+    range.setFontWeight("normal");
   }
 }
 
