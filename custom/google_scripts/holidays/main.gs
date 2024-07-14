@@ -6,6 +6,18 @@ function onOpen() {
 
 }
 
+function onEdit(e) {
+  // Set a comment on the edited cell to indicate when it was changed.
+  const range = e.range;
+  var editedValue = range.getValue();
+  if (editedValue > 0) {
+    range.setBackground("#8D021F")
+  }
+  else {
+    range.setBackground("#cfe2f3")
+  }
+}
+
 function call_data_customer(){
   editHolidaysPlanning(DATA_CUSTOMER);
 }
